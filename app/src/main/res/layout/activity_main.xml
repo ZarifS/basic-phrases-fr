@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.zarifshahriar.basicphrases.MainActivity">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:srcCompat="@drawable/wp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="42dp"
+        android:background="@drawable/red_graid"
+        android:fontFamily="sans-serif-condensed"
+        android:padding="9dp"
+        android:text="Select A Phrase To Hear It In French!"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="21sp" />
+
+    <GridLayout
+        android:id="@+id/grid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#32ffffff"
+        android:rowOrderPreserved="false"
+        android:columnCount="3"
+        android:padding="10dp"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+
+        <Button
+            android:tag="1"
+            android:id="@+id/hello"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="0"
+            android:text="Hello"
+            android:layout_columnWeight="1"
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:padding="5dp"
+            android:onClick="onTapped"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/blue_graid" />
+
+        <Button
+            android:tag="2"
+            android:id="@+id/sorry"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:layout_gravity="fill"
+            android:text="Sorry"
+            android:background="@drawable/orange"
+            android:onClick="onTapped"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:tag="4"
+            android:id="@+id/imcalled"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="My \nName \nIS"
+            android:layout_column="2"
+            android:layout_row="0"
+            android:layout_rowSpan="2"
+            android:layout_rowWeight="1"
+            android:onClick="onTapped"
+            android:background="@drawable/red_graid"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:tag="6"
+            android:id="@+id/welcome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="2"
+            android:layout_row="2"
+            android:text="You're\nWelcome"
+            android:onClick="onTapped"
+            android:background="@drawable/blue_graid"
+            android:textColor="@android:color/background_light"/>
+
+        <Button
+            android:tag="3"
+            android:id="@+id/thanks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:layout_gravity="fill"
+            android:text="Thank You"
+            android:background="@drawable/green"
+            android:onClick="onTapped"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:tag="5"
+            android:id="@+id/howtosay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How To Say ..?"
+            android:layout_columnSpan="2"
+            android:layout_column="0"
+            android:layout_row="2"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:onClick="onTapped"
+            android:background="@drawable/red_graid"
+            android:textColor="@android:color/background_light" />
+
+        <Button
+            android:tag="9"
+            android:id="@+id/doyouspeakenglish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Do you speak english?"
+            android:layout_columnSpan="3"
+            android:layout_column="0"
+            android:layout_row="4"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:onClick="onTapped"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/orange" />
+
+        <Button
+            android:tag="7"
+            android:id="@+id/name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Your Name?"
+            android:layout_column="0"
+            android:layout_row="3"
+            android:layout_gravity="fill"
+            android:onClick="onTapped"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/green" />
+
+        <Button
+            android:tag="8"
+            android:id="@+id/howareyou"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="How are you?"
+            android:layout_columnSpan="2"
+            android:layout_column="1"
+            android:layout_row="3"
+            android:layout_columnWeight="1"
+            android:layout_gravity="fill"
+            android:onClick="onTapped"
+            android:textColor="@android:color/background_light"
+            android:background="@drawable/red_graid" />
+
+    </GridLayout>
+
+</RelativeLayout>
